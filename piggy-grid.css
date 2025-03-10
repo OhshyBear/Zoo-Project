@@ -1,0 +1,95 @@
+@media only screen and (min-width : 800px){
+    .frame{
+        display:grid;
+        grid-template-columns: auto 35% 35%;
+        grid-template-rows: 10% 40% auto;
+        grid-template-areas: 
+            "title title title"
+            "image content content"
+            "image visit visit";
+        grid-gap: 5px;
+        padding: 3px;
+        height: 100vh;
+    }
+    .top-header{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container{
+        grid-area: image;
+    }
+    .image-container >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container{
+        grid-area: content;             /*I flipped these because it would look better */
+    }
+    .schedule{
+        grid-area: visit;;
+    }
+} 
+
+@media only screen and (max-width : 799px) {
+    .frame{
+        display:grid;
+        grid-template-columns: auto auto 35%;
+        grid-template-rows: 10% auto auto;
+        grid-template-areas: 
+            "title title title"
+            "image image content"
+            "visit visit visit";
+        grid-gap: 5px;
+        padding: 3px;
+    }
+    .top-header{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container{
+        grid-area: image;
+    }
+    .image-container >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container{
+        grid-area: content;            
+    }
+    .schedule{
+        grid-area: visit;
+    }
+}
+
+
+
+@media only screen and (max-width : 480px) {
+    .frame{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 15% 45% 30%;
+        grid-gap: 0px;
+        padding: 0px;
+    }
+    .top-header{
+        grid-area: title;
+        display: flex;
+        width: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container >img{
+        display: none;
+    }
+    .content-container{
+        grid-area: content;
+        width:100%;         
+    }
+    .schedule{
+        grid-area: visit;
+    }
+}

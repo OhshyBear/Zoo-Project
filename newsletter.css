@@ -1,0 +1,591 @@
+@media only screen and (min-width : 800px){
+    .frame{
+        display:grid;
+        grid-template-columns: 35% 35% 30%;
+        grid-template-areas: 
+            "upper upper upper"
+            "titleb imageb imageb"
+            "contentb imageb imageb"
+            "imagea title title"
+            "imagea contenta contenta";
+        grid-gap: 0;
+        padding: 0;
+    }
+    .top-header{
+        grid-area: upper;
+        text-align: center;
+    }
+    .story-header{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container{
+        grid-area: imagea;
+    }
+    .image-container >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container{
+        grid-area: contenta;            
+    }
+    .story-header2{
+        grid-area: titleb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container2{
+        grid-area: imageb;
+    }
+    .image-container2 >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container2{
+        grid-area: contentb;             
+    }
+    /* The non grid css */
+    header{
+        background-color: #CAF2FF;
+        margin: 0;
+        padding: 0;
+        width:100%;
+    }
+    .phone-menu{
+        display: none;
+    }
+    .container1{
+        display: flex;
+        flex-direction: row;
+        height:20%;
+        max-height: 150px;
+        position: fixed;
+        top: 0;
+    }
+    .logo{
+        width: 30%;
+        height: 100%;
+        max-width: 150px;
+    }
+    .head-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .zoo-name{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 70%;
+        width:93%;
+        font-size: 1.5vw;
+    }
+    .navbar{
+        background-color: #6FA400;
+        border-radius: 17px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 35%;
+        font-size: 1.7vw;
+    }
+    .nav-item{
+        text-decoration: none;
+        color:black;
+    }
+    .dropdown{
+        float:left;
+        overflow: hidden;
+    }
+    hr{
+        width:100%;
+        border-color: black;
+    }
+    .dropbtn{
+        background-color: #6FA400;
+        border: none;
+        font-family: "Lancelot";
+        font-size: 1.5vw;
+    }
+    .dropdown-content{
+        display:none;
+        position: absolute;
+        min-width: 160px;
+        border:1px solid black;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .dropdown-content a{
+        text-decoration: none;
+        color:black;
+    }
+    #dropdown:hover .dropdown-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -5%;
+        background-color: #6FA400;
+        color:black;
+    }
+    body{
+        background-color: #8F7A6E;
+        margin:0;
+        margin-top:16.5vh;
+        font-family: "Lancelot";
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame{
+        background-color:aliceblue;
+        width: 80%;
+        height: 100%;
+        min-height: 100vh;
+    }
+    h1{
+        font-size: 2.5vw;
+    }
+    h2{
+        font-size: 2.3vw;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .description{
+        font-size: 1.5vw;
+        padding:0% 10%
+    }
+    .content-container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .description2{
+        font-size: 1.5vw;
+        padding:0% 10%
+    }
+    .container3{
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        bottom: 0;
+        width:100%;
+        height: 15%;
+        background-color: #6FA400;
+    }
+    .credit{
+        text-decoration: underline;
+        margin: 0 2%;
+    }
+}
+
+
+
+
+@media only screen and (max-width : 799px) {
+    .frame{
+        display:grid;
+        grid-template-columns: 38% 24% 38%;
+        grid-template-areas: 
+            "upper upper upper"
+            "titleb imageb imageb"
+            "contentb imageb imageb"
+            "imagea title title"
+            "imagea contenta contenta";
+        grid-gap: 0;
+        padding: 0;
+    }
+    .top-header{
+        grid-area: upper;
+        text-align: center;
+    }
+    .story-header{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container{
+        grid-area: imagea;
+    }
+    .image-container >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container{
+        grid-area: contenta;            
+    }
+    .story-header2{
+        grid-area: titleb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container2{
+        grid-area: imageb;
+    }
+    .image-container2 >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container2{
+        grid-area: contentb; 
+    }
+
+
+    header{
+        background-color: #CAF2FF;
+        margin: 0;
+        padding: 0;
+        width:100%;
+    }
+    .phone-menu{
+        display: none;
+    }
+    .container1{
+        display: flex;
+        flex-direction: row;
+        height:20%;
+        max-height: 150px;
+        position: fixed;
+        top: 0;
+    }
+    .logo{
+        width: 30%;
+        height: 100%;
+        max-width: 150px;
+    }
+    .head-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .zoo-name{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 70%;
+        width:93%;
+        font-size: 1.5vw;
+    }
+    .navbar{
+        background-color: #6FA400;
+        border-radius: 17px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 35%;
+        font-size: 1.7vw;
+    }
+    .nav-item{
+        text-decoration: none;
+        color: black;
+    }
+    .dropdown{
+        float:left;
+        overflow: hidden;
+    }
+    hr{
+        width:100%;
+        border-color: black;
+    }
+    .dropbtn{
+        background-color: #6FA400;
+        border: none;
+        font-family: "Lancelot";
+        font-size: 1.5vw;
+    }
+    .dropdown-content{
+        display:none;
+        position: absolute;
+        min-width: 100px;
+        border:1px solid black;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .dropdown-content a{
+        text-decoration: none;
+        color:black;
+    }
+    #dropdown:hover .dropdown-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -5%;
+        background-color: #6FA400;
+        color:black;
+    }
+    body{
+        background-color: #8F7A6E;
+        margin:0;
+        margin-top:16.5vh;
+        font-family: "Lancelot";
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame{
+        background-color:#8F7A6E;
+        width: 95%;
+        height: 100%;
+        min-height: 100vh;
+    }
+    h1{
+        font-size: 2.5vh;
+    }
+    h2{
+        font-size: 2vh;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .description{
+        font-size: 1.5vh;
+        padding:0% 10%
+    }
+    .content-container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .description2{
+        font-size: 1.5vh;
+        padding:0% 10%
+    }
+    .container3{
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        bottom: 0;
+        width:100%;
+        height: 15%;
+        background-color: #6FA400;
+    }
+    .credit{
+        text-decoration: underline;
+        margin: 0 2%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width : 480px) {
+    .frame{
+        display:grid;
+        grid-template-columns: 38% 24% 38%;
+        grid-template-areas: 
+            "upper upper upper"
+            "titleb imageb imageb"
+            "contentb contentb contentb"
+            "imagea imagea title"
+            "contenta contenta contenta";
+        grid-gap: 0;
+        padding: 0;
+    }
+    .top-header{
+        grid-area: upper;
+        text-align: center;
+    }
+    .story-header{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container{
+        grid-area: imagea;
+    }
+    .image-container >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container{
+        grid-area: contenta;            
+    }
+    .story-header2{
+        grid-area: titleb;
+        display: flex;
+        align-items: center;
+    }
+    .image-container2{
+        grid-area: imageb;
+    }
+    .image-container2 >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container2{
+        grid-area: contentb; 
+    }
+    header{
+        background-color: #CAF2FF;
+        margin: 0;
+        padding: 0;
+        width:100%;
+    }
+    .container1{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start ;
+        align-items: center;
+        height:20%;
+        width:100%;
+        max-height: 100px;
+        position: fixed;
+        top: 0;
+    }
+    .logo{
+        width: 30%;
+        height: 100%;
+        max-width: 100px;
+    }
+    .head-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        max-height: 100px;
+    }
+    .name-anchor{
+        font-size: 3.5vh;
+    }
+    .zoo-name{
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        height: 100%;
+        width:45%;
+        min-width: 150px;
+        font-size: 1.5vh;
+    }
+    .phone-menu{
+        display:flex;
+    }
+    #toggle{
+        display:none;
+    }
+    .navbar{
+        display: none;
+    }
+    .navigation-menu a {
+        color: black;
+        text-decoration: none;
+        transition:all 0.3s;
+        text-transform: uppercase;
+    }
+    .bars {
+        margin-right: 10px;
+    }
+    .navigation-menu {
+        background: #6FA400;
+        height: 100%;
+        width: 90%;
+        padding: 10% 0%;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        position: fixed;
+        left: -90%;
+        top: 0;
+        transition: all 0.5s;
+        z-index: 1;
+        font-size: 45px;
+    }
+    .navigation-menu li{
+        border-bottom:3px solid black;
+        padding-top:12%;
+    }
+    .navigation-menu li:hover {  /* EDIT THIS TO LIGHTGRAY!!!*/
+        background: #444;
+    }
+    label[for="toggle"] {
+        cursor: pointer;
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    input#toggle:checked + ul.navigation-menu {
+        left: 0;
+    }
+    input#toggle:checked ~ .content {
+        right: -45%;
+    }
+    body{
+        background-color: #8F7A6E;
+        margin:0;
+        margin-top:16.5vh;
+        font-family: "Lancelot";
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame{
+        background-color:#8F7A6E;
+        width: 95%;
+        height: 100%;
+        min-height: 100vh;
+    }
+    h1{
+        font-size: 2.5vh;
+    }
+    h2{
+        font-size: 2vh;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .description{
+        font-size: 1.5vh;
+        padding:0% 10%
+    }
+    .content-container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .description2{
+        font-size: 1.5vh;
+        padding:0% 10%
+    }
+    .container3{
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        bottom: 0;
+        width:100%;
+        height: 15%;
+        background-color: #6FA400;
+    }
+    .credit{
+        text-decoration: underline;
+        margin: 0 2%;
+    }
+
+}

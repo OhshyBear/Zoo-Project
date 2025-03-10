@@ -1,0 +1,103 @@
+@media only screen and (min-width : 800px){
+    .frame{
+        display:grid;
+        grid-template-columns: auto 35% 35%;
+        grid-template-rows: 10% auto 37%;
+        grid-template-areas: 
+            "title title title"
+            "image cont cont"
+            "feed feed feed";
+        grid-gap: 5px;
+        padding: 3px;
+    }
+    .top-header{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .stingray{
+        grid-area: image;
+    }
+    .stingray >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container{
+        grid-area: feed;             /*I flipped these because it would look better */
+    }
+    .schedule{
+        grid-area: cont;
+    }
+
+
+} 
+
+@media only screen and (max-width : 799px) {
+    .frame{
+        display:grid;
+        grid-template-columns: auto auto 30%;
+        grid-template-rows: 10% auto 37%;
+        grid-template-areas: 
+            "title title title"
+            "image image content"
+            "feed feed feed";
+        grid-gap: 5px;
+        padding: 3px;
+    }
+    .top-header{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .stingray{
+        grid-area: image;
+    }
+    .stingray >img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .content-container{
+        grid-area: feed;            
+    }
+    .schedule{
+        grid-area: content;
+    }
+
+}
+
+
+
+@media only screen and (max-width : 480px) {
+    .frame{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "title title title"
+            "content content content"
+            "feed feed feed";
+        grid-gap: 0px;
+        padding: 0px;
+    }
+    .top-header{
+        grid-area: title;
+        display: flex;
+        width: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .stingray >img{
+        display: none;
+    }
+    .content-container{
+        grid-area: feed;
+        width:100%;         
+    }
+    .schedule{
+        grid-area: content;
+    }
+
+
+}

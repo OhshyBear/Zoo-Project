@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lancelot|Roboto">
+    <link href="animalworlds.css" rel="stylesheet">
+    <title>Animal World's</title>
+</head>
+<body>
+    <header class="container1">
+        <img src="Zoo Logo.png" rel="bear hiding behind tree logo" class="logo">
+        <div class="head-content">
+            <div class="zoo-name"><h1><a href="index.html" class="name-anchor"> Shy Bear Zoo </a></h1></div>
+            <div class="navbar">
+                <div><a href="animalworlds-index.html" class="nav-item">Animal World's</a></div>
+                <div><a href="specialevents-index.html" class="nav-item">Special Events</a></div>
+                <div><a href="exploration-index.html" class="nav-item">Exploration Map</a></div>
+                <div><a href="store-index.html" class="nav-item">Store</a></div>
+                <div class="nav-item" id="dropdown">
+                    <button class="dropbtn">Dining
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="the-salty-bear.html">The Salty Bear</a>
+                      <hr>
+                      <a href="hungry-hippo.html">Hungry Hippo Cove</a>
+                    </div>
+                  </div>
+                <div><a href="registration-index.html" class="nav-item">Registration</a></div>
+            </div>
+        </div>
+        <div class="phone-menu">
+            <input type="checkbox" id="toggle" name="toggle">
+
+            <ul class="navigation-menu">
+                <li class="menu-item"><a href="animalworlds-index.html">Animal World's</a></li>
+                <li class="menu-item"><a href="specialevents-index.html">Special Events</a></li>
+                <li class="menu-item"><a href="exploration-index.html">Exploration Map</a></li>
+                <li class="menu-item"><a href="store-index.html">Store</a></li>
+                <li class="menu-item"><a href="the-salty-bear.html">Dining</a></li>
+                <li class="menu-item"><a href="registration-index.html">Registration</a></li>
+                <li class="menu-item"><a href="index.html">Home</a></li>
+            </ul>
+    
+            <div class="navigation">
+            <label for="toggle" class="bars"><i class="bars"></i>&#9776;</label>
+            </div>
+        </div>
+    </header>
+    <div class="frame">
+        <div class="world1">
+            <div class="row">
+                <h1>Africa World</h1>
+                <div class="column">
+                    <img src="lions2.jpg" onclick="openModal(a);currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="elephants2.jpg" onclick="openModal(a);currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="giraffe2.jpg" onclick="openModal(a);currentSlide(3)" class="hover-shadow">
+                </div>
+            </div>
+            <p class="running-text">Africa World is a wonderful place to experience the different habitats of Africa without all the dangers. We have many different 
+                exhibits featuring several different animals from the Savanna to the Sahara.
+            </p>
+        </div>
+        <div class="world2">
+            <h1>Under the Sea Aquarium</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="octopus2.jpg" onclick="openModal(b);currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="clown-fish2.jpg" onclick="openModal(b);currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="sea-turtle2.jpg" onclick="openModal(b);currentSlide(3)" class="hover-shadow">
+                </div>
+            </div>
+            <p class="running-text">Under the Sea Aquarium is home to over 1200 different species of Ocean life. Come here to relax and enjoy the serenity that ocean life
+                brings. From sharks to feather dusters people young and old are sure to find something fasinating in this exhibit.
+            </p>
+        </div>
+    </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal(a)">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="lions1.jpg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="elephants1.jpg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="giraffe1.jpg" style="width: 100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="lions2.jpg" onclick="currentSlide(1)" alt="Shy Bear Zoo Lions">
+                </div>
+                <div class="column1">
+                    <img class="demo" src="elephants2.jpg" onclick="currentSlide(2)" alt="Shy Bear Zoo Mother and Baby Elephant">
+                </div>
+                <div class="column1">
+                    <img class="demo" src="giraffe2.jpg" onclick="currentSlide(3)" alt="Shy Bear Zoo Curious Giraffe">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="myModal1" class="modal1">
+            <span class="close cursor1" onclick="closeModal(b)">&times;</span>
+            <div class="modal-content1">
+                <div class="mySlides1">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="octopus1.jpg" style="width: 100%">
+                </div>
+                <div class="mySlides1">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="clown-fish1.jpg" style="width: 100%">
+                </div>
+                <div class="mySlides1">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="sea-turtle1.jpg" style="width: 100%">
+                </div>
+
+                <a class="prev" onclick="plusSlidesr(-1)">&#10094</a>
+                <a class="next" onclick="plusSlidesr(1)">&#10095</a>
+
+                <div class="caption-container1">
+                    <p id="caption1"></p>
+                </div>
+
+                <div class="column1">
+                    <img class="demo1" src="octopus2.jpg" onclick="currentSlider(4)" alt="Shy Bear Zoo Octopus">
+                </div>
+                <div class="column1">
+                    <img class="demo1" src="clown-fish2.jpg" onclick="currentSlider(5)" alt="Shy Bear Zoo Clown Fish in Anemone">
+                </div>
+                <div class="column1">
+                    <img class="demo1" src="sea-turtle2.jpg" onclick="currentSlider(6)" alt="Shy Bear Zoo Sea Turtle">
+                </div>
+            </div>
+        </div>
+        <footer class="container3">
+            <div class="credit">
+                <a href="https://www.pexels.com/photo/lion-beside-lioness-67216/">Lions Photo by Pixabay</a>
+            </div> 
+            <div class="credit">
+                <a href="https://www.pexels.com/photo/two-gray-elephants-16066/">Elephants Photo by Casey Allen</a>
+            </div> 
+            <div class="credit">
+                <a href="https://www.pexels.com/photo/close-up-photo-of-giraffe-s-head-2167374/">Giraffe Photo by Teddy Yang</a>
+            </div> 
+            <div class="credit">
+                <a href="https://www.pexels.com/photo/selective-focus-photography-of-octopus-3046629/">Octopus Photo by Pia B</a>
+            </div> 
+            <div class="credit">
+                <a href="https://www.pexels.com/photo/photo-of-a-fish-on-corals-1522160/">Clown Fish Photo by Tom Fisk</a>
+            </div> 
+            <div class="credit">
+                <a href="https://www.pexels.com/photo/gray-and-green-turtle-swimming-on-water-68744/">Sea Turtle Photo by Pixabay</a>
+            </div> 
+        </footer>
+        <script>
+            var a  = document.getElementById("myModal");
+            // Open the Modal
+            function openModal(a) {
+              a.style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal(a) {
+              a.style.display = "none";
+            }
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+
+                // Open the Modal
+                var b = document.getElementById("myModal1")
+                function openModal(b) {
+                    b.style.display = "block";
+                }
+
+                 // Close the Modal
+                function closeModal(b) {
+                    b.style.display = "none";
+                }
+
+                var slideIndexs = 1;
+                showSlideshow(slideIndexs);
+
+                // Next/previous controls
+                function plusSlidesr(x) {
+                showSlideshow(slideIndexs += x);
+                }
+
+                // Thumbnail image controls
+                function currentSlider(x) {
+                showSlideshow(slideIndexs = x);
+                }
+
+                function showSlideshow(x) {
+                var j;
+                var slide = document.getElementsByClassName("mySlides1");
+                var dot = document.getElementsByClassName("demo1");
+                var captionTexts = document.getElementById("caption1");
+                if (x > slide.length) {slideIndexs = 1}
+                if (x < 1) {slideIndexs = slide.length}
+                for (j = 0; j < slide.length; j++) {
+                    slide[j].style.display = "none";
+                }
+                for (j = 0; j < dot.length; j++) {
+                    dot[j].className = dot[j].className.replace(" active", "");
+                }
+                slide[slideIndexs-1].style.display = "block";
+                dot[slideIndexs-1].className += " active";
+                captionTexts.innerHTML = dot[slideIndexs-1].alt;
+                }
+
+
+            
+
+            
+            </script>
+    </body>
+</html>
